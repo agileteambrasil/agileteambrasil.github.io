@@ -1,0 +1,66 @@
+[
+  {
+    "_id": "5695172d36b90932fba62504",
+    "cpf": "052.526.347-83",
+    "nome": "Crane Rojas",
+    "senha": 123456,
+    "status": true,
+    "orgao": "Prefeitura Maricá"
+  },
+  {
+    "_id": "5695172d8db4f297945bd255",
+    "cpf": "052.526.347-83",
+    "nome": "Louella Lott",
+    "senha": 123456,
+    "status": true,
+    "orgao": "Prefeitura Maricá"
+  },
+  {
+    "_id": "5695172dd1de144875956674",
+    "cpf": "052.526.347-83",
+    "nome": "Day Waters",
+    "senha": 123456,
+    "status": true,
+    "orgao": "Prefeitura Maricá"
+  },
+  {
+    "_id": "5695172dceb02ce9d6afcaa8",
+    "cpf": "052.526.347-83",
+    "nome": "Fischer Guthrie",
+    "senha": 123456,
+    "status": true,
+    "orgao": "Prefeitura Maricá"
+  },
+  {
+    "_id": "5695172db59537471a221a3b",
+    "cpf": "052.526.347-83",
+    "nome": "Dejesus Hodges",
+    "senha": 123456,
+    "status": true,
+    "orgao": "Prefeitura Maricá"
+  },
+  {
+    "_id": "5695172dc0e3245371845dfb",
+    "cpf": "052.526.347-83",
+    "nome": "Huber Farmer",
+    "senha": 123456,
+    "status": true,
+    "orgao": "Prefeitura Maricá"
+  },
+  {
+    "_id": "5695172d0fbdaaa8823fd280",
+    "cpf": "052.526.347-83",
+    "nome": "Allison Valenzuela",
+    "senha": 123456,
+    "status": true,
+    "orgao": "Prefeitura Maricá"
+  },
+  {
+    "_id": "5695172d373d20c603de564e",
+    "cpf": "052.526.347-83",
+    "nome": "Angela Franks",
+    "senha": 123456,
+    "status": true,
+    "orgao": "Prefeitura Maricá"
+  }
+]

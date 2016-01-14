@@ -1,0 +1,22 @@
+[
+  {
+    "text": "Main Navigation",
+    "heading": "true"
+  },
+      {
+      "text": "Cadastro",
+      "sref": "#",
+      "icon": "fa fa-edit",
+      "submenu": [
+        {"text": "Usuários",  "sref": "app.users.list"},
+        {"text": "Veículos",  "sref": "app.agendamento.list" }
+      ]
+    },
+  {
+    "text": "Agendamento",
+    "sref": "app.agendamento.list",
+    "icon": "fa fa-car",
+    "label": "label label-info"
+  }
+
+]

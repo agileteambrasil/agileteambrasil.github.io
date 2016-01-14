@@ -1,0 +1,67 @@
+<div ng-controller="RegisterFormController" class="block-center mt-xl wd-xl">
+	<!-- START panel-->
+	<div class="panel panel-dark panel-flat">
+		<div class="panel-heading text-center">
+			<a href="#"> <img src="app/img/logo.png" alt="Image" class="block-center img-rounded" /> </a>
+		</div>
+		<div class="panel-body">
+			<form role="form" name="registerForm" novalidate="" ng-submit="register()" class="form-validate mb-lg">
+				<div class="form-group has-feedback">
+					<label class="text-muted">Nome completo</label>
+					<input type="email" name="account_email" placeholder="Enter email" autocomplete="off" ng-model="account.email" required="" class="form-control" />
+					<span class="fa fa-user form-control-feedback text-muted"></span>
+					<span ng-show="registerForm.account_email.$dirty &amp;&amp; registerForm.account_email.$error.required" class="text-danger">This field is required</span>
+					<span ng-show="registerForm.account_email.$dirty &amp;&amp; registerForm.account_email.$error.email" class="text-danger">This field must be a valid email address</span>
+				</div>
+				<div class="form-group has-feedback">
+					<label class="text-muted">Email</label>
+					<input type="email" name="account_email" placeholder="Enter email" autocomplete="off" ng-model="account.email" required="" class="form-control" />
+					<span class="fa fa-envelope form-control-feedback text-muted"></span>
+					<span ng-show="registerForm.account_email.$dirty &amp;&amp; registerForm.account_email.$error.required" class="text-danger">This field is required</span>
+					<span ng-show="registerForm.account_email.$dirty &amp;&amp; registerForm.account_email.$error.email" class="text-danger">This field must be a valid email address</span>
+				</div>
+				<div class="form-group has-feedback">
+					<label class="text-muted">Senha</label>
+					<input id="id-password" type="password" name="account_password" ng-model="register.password" ng-pattern="/^[a-zA-Z0-9]{6,10}$/" required="" class="form-control" />
+					<span class="fa fa-lock form-control-feedback text-muted"></span>
+					<span ng-show="registerForm.account_password.$dirty &amp;&amp; registerForm.account_password.$error.required" class="text-danger">This field is required</span>
+					<span ng-show="registerForm.account_password.$dirty &amp;&amp; registerForm.account_password.$error.pattern" class="text-danger">Input should match 'a-zA-Z0-9' and 6-10 length</span>
+				</div>
+				<div class="form-group has-feedback">
+					<label class="text-muted">Sua senha novamente</label>
+					<input type="password" name="account_password_confirm" ng-model="register.account_password_confirm" ui-validate="'$value==register.password'" ui-validate-watch="'password'" class="form-control" />
+					<span class="fa fa-lock form-control-feedback text-muted"></span>
+					<span ng-show="registerForm.account_password_confirm.$dirty &amp;&amp; registerForm.account_password_confirm.$error.validator" class="text-danger">Password does Not match</span>
+				</div>
+				<div class="clearfix">
+					<div class="checkbox c-checkbox pull-left mt0">
+						<label>
+							<input type="checkbox" required="" name="account_agreed" ng-model="account.agreed" />
+							<span class="fa fa-check"></span>Eu aceito os <a href="#">termos</a> </label>
+					</div>
+				</div>
+				<div ng-show="registerForm.account_agreed.$dirty &amp;&amp; registerForm.account_agreed.$error.required" class="text-danger">
+					Você aceita os termos?
+				</div>
+				<button type="submit" class="btn btn-block btn-primary mt-lg">
+					Cadastrar
+				</button>
+			</form>
+			<div ng-show="authMsg" class="alert alert-danger text-center">
+				{{authMsg}}
+			</div>
+			<p class="pt-lg text-center">
+				Já está cadastrado?
+			</p><a ui-sref="page.login" class="btn btn-block btn-default">Logue aqui</a>
+		</div>
+	</div>
+	<!-- END panel-->
+	<div class="p-lg text-center">
+		<span>&copy;</span>
+		<span ng-bind="app.year"></span>
+		<span>-</span>
+		<span ng-bind="app.name"></span>
+		<br/>
+		<span ng-bind="app.description"></span>
+	</div>
+</div>
